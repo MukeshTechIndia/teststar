@@ -35,11 +35,11 @@ body {
 }
 
 .green-bg {
-  background: #28a745 !important;
+  background: #58c371 !important;
 }
 
 .yellow-bg {
-  background: #ffc107 !important;
+  background: #f3ca4f !important;
 }
 
 .pink-bg {
@@ -49,11 +49,15 @@ body {
 /*****Navigation start here******/
 .logo-section {
   border-right: 1px solid #cccccc;
-  width: 14.5%;
+  width: 14.6%;
+  height: 52px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-main {
   background: #fff;
+  padding: 0.2rem 1rem;
 }
 
 .navbar-main .navbar-nav .nav-icon-set {
@@ -103,13 +107,13 @@ body {
 }
 
 .notification-icon-set {
-  width: 70px;
+  width: 32px;
   text-align: center;
   color: #fff;
   border-radius: 0.25rem;
-  font-size: 1.875rem;
-  height: 64px;
-  line-height: 64px;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
   display: inline-block;
 }
 
@@ -119,7 +123,10 @@ body {
   width: 100%;
   height: 3.5rem;
   line-height: 3.5rem;
-  background-color: #fff;
+  background: #fff;
+  border-top: 1px solid #dee2e6;
+  color: #869099;
+  font-size: 14px;
 }
 
 .nav-link:hover {
@@ -205,6 +212,8 @@ body {
 .date-text {
   color: #318fd5;
   font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0px 0px 0px;
 }
 
 .home-item-card-main {
@@ -227,11 +236,12 @@ body {
   font-size: 18px;
   margin: 0px;
   font-weight: normal;
+  word-break: break-all;
 }
 
 .home-item-card .right-bar p {
   color: #fff;
-  font-size: 22px;
+  font-size: 26px;
   margin: 5px 0px 0px 0px;
 }
 
@@ -243,6 +253,7 @@ body {
   padding: 4px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .home-item-card-main .small-box-footer {
@@ -257,7 +268,7 @@ body {
 }
 
 .notification-item-card .right-bar {
-  width: 71%;
+  width: 84%;
   float: right;
   text-align: right;
 }
@@ -320,6 +331,7 @@ body {
   margin: 10px 0px 0px 0px;
   position: relative;
   cursor: pointer;
+  font-size: 20px;
 }
 .notification-section i {
   color: #1f2d3d;
@@ -375,11 +387,12 @@ body {
 .edit-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #fff !important;
 }
 
 .edit-btn i {
-  margin: 0px 5px 0px 0px;
+  margin: 1px 5px 0px 0px;
 }
 
 .content-inner-title {
@@ -423,7 +436,7 @@ body {
     left: 0;
     width: 230px;
     height: calc(100vh - 3.5rem);
-    margin-top: 3.5rem;
+    margin-top: 3.6rem;
     background: #464646;
     box-sizing: border-box;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
@@ -481,5 +494,11 @@ body {
   }
   .course-form {
     padding: 8px;
+  }
+  .header-dropdown .dropdown-menu {
+    position: absolute;
+  }
+  .date-text {
+    margin: 10px 0px;
   }
 }

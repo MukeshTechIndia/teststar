@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Teststar</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-main">
+      <div class="container-fluid">
+        <div class="logo-section">
+          <img src="images/logo.png" alt="Teststar" class="logo-main" />
+          <a class="navbar-brand navbar-logo-set" href="#">Teststar</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="navbar-toggler-slide"></div>
+          <div class="navbar-toggler-slide"></div>
+          <div class="navbar-toggler-slide"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+            <div class="user-detail">
+              <div class="user-profile"><img src="images/profile_user.jpg" alt="User"/></div>
+              <p class="user-name">Neelkanth Eduction</p>
+              <div class="dropdown header-dropdown">
+                <i class="fa fa-angle-down" data-toggle="dropdown" aria-hidden="true"></i>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Setting</a>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </div>
+              </div>
+              <!--dropdown-->
+            </div>
+            <!--user-detail-->
+            <li class="nav-item">
+              <a class="nav-link active" href="dashboard.html"
+                ><span class="nav-icon-set"><i class="fa fa-tachometer" aria-hidden="true"></i> </span>Dashboard <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">
+                <span class="nav-icon-set"><i class="fa fa-book" aria-hidden="true"></i> </span
+                >Courses</a
+              >
+            </li>
+            <li class="nav-item d-none">
+              <a
+                class="nav-link nav-link-collapse"
+                href="#"
+                id="hasSubItems"
+                data-toggle="collapse"
+                data-target="#collapseSubItems2"
+                aria-controls="collapseSubItems2"
+                aria-expanded="false"
+                >Item 2</a
+              >
+              <ul
+                class="nav-second-level collapse"
+                id="collapseSubItems2"
+                data-parent="#navAccordion"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="nav-link-text">Item 2.1</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="nav-icon-set"><i class="fa fa-play-circle-o" aria-hidden="true"></i></span> Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="nav-icon-set"><i class="fa fa-video-camera" aria-hidden="true"></i></span> Video Streams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="nav-icon-set"><i class="fa fa-commenting-o" aria-hidden="true"></i></span> Chats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="nav-icon-set"><i class="fa fa-picture-o" aria-hidden="true"></i></span> Banners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="nav-icon-set"><i class="fa fa-money" aria-hidden="true"></i></span> Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="nav-icon-set"><i class="fa fa-bell-o" aria-hidden="true"></i></span> Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="nav-icon-set"><i class="fa fa-envelope-o" aria-hidden="true"></i></span> Mail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="nav-icon-set"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span> Alerts</a>
+            </li>
+          </ul>
+
+          <div class="top-right-bar">
+            <div class="top-inside">
+              <div class="row">
+                <div class="col-lg-7 col-sm-7">
+                  <form class="form-inline mt-2 mt-md-0 header-search">
+                    <input
+                      class="form-control mr-sm-2"
+                      type="text"
+                      placeholder="search here..."
+                      aria-label="Search"
+                    />
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <!--col-->
+                <div class="col-lg-5 col-sm-5">
+                    <div class="dropdown notification-section">
+                        <i class="fa fa-bell-o" data-toggle="dropdown" aria-hidden="true"></i>
+                        <span class="badge badge-warning notification-badge">22</span>
+                        <div class="dropdown-menu dropdown-menu-lg">
+                          <span class="dropdown-item dropdown-header">3 Notifications</span>
+                          <div class="dropdown-divider"></div>
+                          <a href="#" class="dropdown-item">
+                             4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                          </a>
+                          <a href="#" class="dropdown-item">
+                            4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                          </a>
+                          <a href="#" class="dropdown-item">
+                            4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                        </div>
+                    </div><!--notification end here-->
+                </div>
+                <!--col-->
+              </div>
+              <!--row-->
+            </div>
+            <!--top-inside-->
+          </div>
+        </div>
+      </div>
+      <!--container-->
+    </nav>
+
+    <main class="content-wrapper">
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-7">
+                <nav class="breadcrumb breadcrumb-main">
+                    <!-- <a class="breadcrumb-item" href="#">Home</a>
+                    <a class="breadcrumb-item" href="#">Library</a> -->
+                    <span class="breadcrumb-item active">Dashboard</span>
+                </nav>
+            </div><!--col-->
+
+            <div class="col-5">
+                <div class="text-right date-text">Friday, 3 July 2020</div>
+            </div>
+            <!--col-->
+          </div><!--row-->
+
+        <div class="row">
+            <div class="col-lg-3">
+              <div class="home-item-card-main blue-bg">
+                 <div class="home-item-card">
+                    <div class="right-bar">
+                        <h5>Users</h5>
+                        <p>12,453</p>
+                    </div>
+                    <img src="images/user-icon.png" alt="User Icon" />
+                 </div><!--home-item-card-->
+                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                </div>
+                <!--home-item-card-main-->
+            </div>
+            <!--col-->
+
+            <div class="col-lg-3">
+              <div class="home-item-card-main green-bg">
+                <div class="home-item-card">
+                  <div class="right-bar">
+                    <h5>Courses</h5>
+                    <p>20</p>
+                  </div>
+                  <img src="images/courses.png" alt="Courses" />
+                </div>
+                <!--home-item-card-->
+                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+              </div>
+              <!--home-item-card-main-->
+            </div>
+            <!--col-->
+
+            <div class="col-lg-3">
+              <div class="home-item-card-main yellow-bg">
+                <div class="home-item-card">
+                  <div class="right-bar">
+                    <h5>Videos</h5>
+                    <p>2560</p>
+                  </div>
+                  <img src="images/videos.png" alt="Video" />
+                </div>
+                <!--home-item-card-->
+                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+              </div>
+              <!--home-item-card-main-->
+            </div>
+            <!--col-->
+
+            <div class="col-lg-3">
+              <div class="home-item-card-main pink-bg">
+                <div class="home-item-card">
+                  <div class="right-bar">
+                    <h5>Packages</h5>
+                    <p>24</p>
+                  </div>
+                  <img src="images/packages.png" alt="Packages" />
+                </div>
+                <!--home-item-card-->
+                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+              </div>
+              <!--home-item-card-main-->
+            </div>
+            <!--col-->
+        </div>
+        <!--row-->
+
+        <div class="row mt-4">
+            <div class="col-lg-3">
+              <div class="home-item-card-main">
+                <div class="home-item-card notification-item-card">
+                  <div class="blue-bg notification-icon-set">
+                      <i class="fa fa-envelope-o" aria-hidden="true"></i>                  
+                    </div>
+                    <!--item-bg1-->
+                    <div class="right-bar">
+                        <h5>12 Unread mails</h5>
+                    </div>
+                </div>
+                <!--home-item-card-->
+                </div>
+                <!--home-item-card-main-->
+            </div>
+            <!--col-->
+
+            <div class="col-lg-3">
+              <div class="home-item-card-main">
+                <div class="home-item-card notification-item-card">
+                  <div class="green-bg notification-icon-set">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                  </div>
+                  <!--item-bg1-->
+                  <div class="right-bar">
+                    <h5>20 New notifications</h5>
+                  </div>
+                </div>
+                <!--home-item-card-->
+              </div>
+              <!--home-item-card-main-->
+            </div>
+            <!--col-->
+        
+            <div class="col-lg-3">
+              <div class="home-item-card-main">
+                <div class="home-item-card notification-item-card">
+                  <div class="yellow-bg notification-icon-set">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                  </div>
+                  <!--item-bg1-->
+                  <div class="right-bar">
+                    <h5>5 New Alerts</h5>
+                  </div>
+                </div>
+                <!--home-item-card-->
+              </div>
+              <!--home-item-card-main-->
+            </div>
+            <!--col-->
+
+            <div class="col-lg-3">
+              <div class="home-item-card-main">
+                <div class="home-item-card notification-item-card">
+                  <div class="pink-bg notification-icon-set">
+                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                  </div>
+                  <!--item-bg1-->
+                  <div class="right-bar">
+                    <h5>15 New messages</h5>
+                  </div>
+                </div>
+                <!--home-item-card-->
+              </div>
+              <!--home-item-card-main-->
+            </div>
+            <!--col-->
+        </div>
+        <!--row-->
+
+
+        <div class="row mt-4">
+            <div class="col-lg-7">
+                <div class="graph-set">
+                    <img src="images/graph-img.png"/>
+
+                </div>
+                <!--home-item-card-->
+            </div>
+            <!--col-->
+        
+            <div class="col-lg-5">
+                <div class="recent-activity">
+                     <h5>Recent Activity</h5>
+                     <ul>
+                         <li class="blue"><i class="fa fa-circle" aria-hidden="true"></i> Uploaded 5 new videos <span>1 July 2020</span></li>
+                         <li class="pink"><i class="fa fa-circle" aria-hidden="true"></i> Uploaded 15 mock test <span>28 June 2020</span></li>
+                         <li class="green"><i class="fa fa-circle" aria-hidden="true"></i> Replied to 10 user queries <span>25 June 2020</span></li>
+                         <li class="red"><i class="fa fa-circle" aria-hidden="true"></i> 1 New course added <span>25 June 2020</span></li>
+                         <li class="purple"><i class="fa fa-circle" aria-hidden="true"></i> 3 Videos removed <span>25 June 2020</span></li>
+                     </ul>
+                </div>
+                <!--recent-activity-->
+            </div>
+            <!--col-->
+        </div>
+        <!--row-->
+
+      </div><!--container-fluid-->
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="text-center">
+          <span>Copyright &copy; 2020 <a href="#">teststar.com</a>. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        $(".nav-link-collapse").on("click", function () {
+          $(".nav-link-collapse").not(this).removeClass("nav-link-show");
+          $(this).toggleClass("nav-link-show");
+        });
+      });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
