@@ -250,7 +250,7 @@ body {
   border-radius: 0.25rem;
   background: #fff;
   width: 100%;
-  padding: 4px;
+  padding: 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -328,10 +328,10 @@ body {
 /****Bell Notification*****/
 .notification-section {
   float: right;
-  margin: 10px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
   position: relative;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 22px;
 }
 .notification-section i {
   color: #1f2d3d;
